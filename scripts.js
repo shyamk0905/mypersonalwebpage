@@ -1,0 +1,26 @@
+$(document).ready(function(){
+    $().addClass("red");
+    $("#signUp-form").validate({
+        rules:{
+            name:{
+                required:true,
+                minlength:3,
+                maxlength:18
+            },
+            email:{
+                required:true,
+                email:true
+            },
+            mobile:{
+                required:true,
+                minlength:10
+            },
+            subject:{
+                required:true
+            },
+            messaging:{
+                required:true
+            }
+        }
+    })
+})
